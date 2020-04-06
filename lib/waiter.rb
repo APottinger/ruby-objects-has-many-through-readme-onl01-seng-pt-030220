@@ -10,7 +10,9 @@ class Waiter
   def initialize(name, yrs_of_exp)
     @name, @yrs_of_exp = name, yrs_of_exp
     @@all << self 
-  end 
+  end
+  
+  def new_meal(customer, total, tip = 0)
   
   def meals
     Meal.all.select do |meal|
