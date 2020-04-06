@@ -9,5 +9,6 @@ class Waiter
   
   def initialize(name, yrs_of_exp)
     @name, @yrs_of_exp = name, yrs_of_exp
+    @@all << self 
   end 
 end
