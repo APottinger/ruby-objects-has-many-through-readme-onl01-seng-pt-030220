@@ -11,4 +11,12 @@ class Waiter
     @name, @yrs_of_exp = name, yrs_of_exp
     @@all << self 
   end 
+  
+  def meals
+    Meal.all.select do |meal|
+      meal.customer
+    end 
+  end 
+  
+  
 end
