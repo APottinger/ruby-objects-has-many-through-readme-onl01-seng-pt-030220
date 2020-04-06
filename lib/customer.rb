@@ -10,6 +10,7 @@ class Customer
   
   def initialize(name, age)
     @name, @age = name, age
+    @@all << self
   end 
   
 end
