@@ -22,9 +22,9 @@ class Waiter
     end 
   end 
   
-  def customers
+  def best_tipper
     Meal.all.select |meal|
-      meal.
+      tip.size >
     end 
   
   
